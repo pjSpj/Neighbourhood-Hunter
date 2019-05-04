@@ -1,0 +1,28 @@
+{
+  "name": "project2-team4",
+  "version": "1.0.0",
+  "description": "for project 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upstairskid/Project2-Team4.git"
+  },
+  "keywords": [
+    "express",
+    "mysql",
+    "sequelize",
+    "node",
+    "handlebars",
+    "API",
+    "MVC"
+  ],
+  "author": "Team4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/upstairskid/Project2-Team4/issues"
+  },
+  "homepage": "https://github.com/upstairskid/Project2-Team4#readme"
+}
