@@ -24,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/upstairskid/Project2-Team4/issues"
   },
-  "homepage": "https://github.com/upstairskid/Project2-Team4#readme"
+  "homepage": "https://github.com/upstairskid/Project2-Team4#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.1.2",
+    "sequelize": "^5.8.4"
+  }
 }
