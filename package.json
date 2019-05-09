@@ -27,8 +27,12 @@
   },
   "homepage": "https://github.com/upstairskid/Project2-Team4#readme",
   "dependencies": {
+    "chosen-js": "^1.8.7",
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
     "handlebars": "^4.1.2",
+    "mysql2": "^1.6.5",
     "sequelize": "^5.8.4"
   }
 }
