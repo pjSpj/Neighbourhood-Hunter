@@ -1,0 +1,121 @@
+<!--*********************************************************************
+ VIEW - DISPLAY THE DATA FROM DATABASE FOR SURVEY VIA HANDLEBARS
+ *********************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Neighbourhood Hunter</title>
+   <!--Bootstrap-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!--jQuery-->
+   <script src="https://code.jquery.com/jquery.js"></script>
+   <!--Font Awesome-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <!--Google Fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <!--CSS-->
+   <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+   <!-- Top Navbar -->
+   <header id="masthead">
+      <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <span class="navbar-brand my-n2 mx-n3"></span><a href="index.html" id="logo"><img
+                  src="/assets/images/noun_neighborhood_15064.png" width="150" height="150" alt="Homes"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav nav-tabs ml-auto">
+                  <li class="nav-item mr-3">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item mr-3">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <div class="container mb-3">
+      <h1 class="text-center mb-3">Your Results</h1>
+      <div class="row">
+         <div class="col-lg-12">
+            <!--MAP-->
+            <!--Placeholder-->
+            <img class="map" src="/assets/images/map-placeholder.jpg">
+         </div>
+      </div>
+   </div>
+
+   <div class="container mb-3">
+      <div class="row">
+         <div class="col-lg-6">
+            <!--LEFT CARD-->
+            <div class="card mb-2">
+               <!--BEING PREPARED-->
+               <div class="card-header rightHeader">Listings</div>
+               <div class="card-body">
+                  <!--TODO add data via handlebars-->
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item">Cras justo odio</li>
+                     <li class="list-group-item">Dapibus ac facilisis in</li>
+                     <li class="list-group-item">Morbi leo risus</li>
+                     <li class="list-group-item">Porta ac consectetur ac</li>
+                     <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <!--RIGHT CARD-->
+         <div class="col-lg-6">
+            <div class="card">
+               <!--READY FOR PICK UP-->
+               <div class="card-header rightHeader">Amenities</div>
+               <div class="card-body">
+                  <!--TODO add data via handlebars-->
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item">Cras justo odio</li>
+                     <li class="list-group-item">Dapibus ac facilisis in</li>
+                     <li class="list-group-item">Morbi leo risus</li>
+                     <li class="list-group-item">Porta ac consectetur ac</li>
+                     <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--Footer-->
+   <footer class="footer pt-3 pb-3">
+      <div class="container text-center">
+         <small>Copyright &copy; 2019 Peiji Song, Kevin Tang. Amanda Tomé</small>
+      </div>
+   </footer>
+
+      <!--JavaScript-->
+      <script src="/assets/javascript/neighHunter.js"></script>
+      <!--Bootstrap Additions-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+         crossorigin="anonymous"></script>
+   </body>
+   
+   </html>
