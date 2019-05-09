@@ -4,7 +4,7 @@
 
 //REQUIRE
 //======================================================================
-require("dotenv").config();
+// require("dotenv").config();
 
 const express = require('express');
 const bodyParser = require("body-parser");
@@ -24,7 +24,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Require Routes
-// require("./routes/html-routes")(app);
+var routes = require("./routes/html-routes");
+
+app.use(routes);
 
 //TODO Force Sync
 app.listen(PORT, function() {
