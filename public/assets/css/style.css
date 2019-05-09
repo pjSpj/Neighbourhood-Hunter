@@ -7,6 +7,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.img{
+    background-image: url("../public/assets/images/skyline.png");
+    background-position: center;
+}
 .map {
     width: 600px;
     height: 400px;
