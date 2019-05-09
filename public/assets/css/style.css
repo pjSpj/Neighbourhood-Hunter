@@ -8,7 +8,7 @@ body {
 }
 
 .img{
-    background-image: url("../public/assets/images/skyline.png");
+    background-image: url("/assets/images/skyline.png");
     background-position: center;
 }
 .map {
