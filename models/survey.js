@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  let Users = sequelize.define('User', {
+  let Survey = sequelize.define('User', {
     housing_info: {
       type: DataTypes.STRING
       },
@@ -13,5 +13,5 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING
       }  
     })
-    return Users
+    return Survey
   }
