@@ -74,9 +74,9 @@
                                  <label for="q1">1. What housing type are you looking for?</label>
                                  <select class="form-control chosen-select" id="q1">
                                     <option value="0"></option>
-                                    <option value="1">House</option>
-                                    <option value="2">Condo</option>
-                                    <option value="3">Apartment</option>
+                                    <option value="37">Apartment or Condo for Rent</option>
+                                    <option value="43">House for Rent</option>
+                                    <option value="35">House for Sale</option>
                                  </select>
                               </div>
                            </div>
@@ -93,14 +93,12 @@
                            <div class="form-row">
                               <div class="col-lg-12">
                                  <label for="q2">2. Please choose your social amenities?</label>
-                                 <select data-placeholder="Choose social amenities ..." name="social[]" multiple
-                                    class="chosen-select">
+                                 <select data-placeholder="Choose social amenities ..." name="social[]" multiple class="chosen-select" id="q2">
                                     <option value="0"></option>
-                                    <option value="1">test</option>
-                                    <option value="2">test1</option>
-                                    <option value="3">test2</option>
-                                    <option value="4">test3</option>
-                                    <option value="5">test4</option>
+                                    <option value="Bars">Bars</option>
+                                    <option value="Coffee Shops">Coffee Shops</option>
+                                    <option value="Cinema">Cinema</option>
+                                    <option value="Restaurants">Restaurants</option>
                                  </select>
                               </div>
                            </div>
@@ -110,7 +108,7 @@
                </div>
             </div>
             <!--Outdoor Amenities-->
-            <div class="card-header">Outdoor Amenities</div>
+            <div class="card-header">Recreational Amenities</div>
             <div class="card-body">
                <form>
                   <div class="form-group ml-2 mr-2 mt-2">
@@ -118,14 +116,12 @@
                         <div class="form-row">
                            <div class="col-lg-12">
                               <label for="q3">3. Please choose your outdoor amenities?</label>
-                              <select data-placeholder="Choose outdoor amenities ..." name="outdoor[]" multiple
-                                 class="chosen-select">
+                              <select data-placeholder="Choose outdoor amenities ..." name="outdoor[]" multiple class="chosen-select" id="q3">
                                  <option value="0"></option>
-                                 <option value="1">test</option>
-                                 <option value="2">test1</option>
-                                 <option value="3">test2</option>
-                                 <option value="4">test3</option>
-                                 <option value="5">test4</option>
+                                 <option value="Parks">Parks</option>
+                                 <option value="Rink">Rink/Arenas</option>
+                                 <option value="Community Center">Community Centre</option>
+                                 <option value="Beach">Beach</option>
                               </select>
                            </div>
                         </div>
@@ -134,26 +130,25 @@
                </form>
             </div>
             <!--Other Amenities-->
-            <div class="card-header">Other Amenities</div>
+            <div class="card-header">Health Amenities</div>
             <div class="card-body">
                <form>
                   <div class="form-group ml-2 mr-2 mt-2">
                      <div class="form-group">
                         <div class="form-row">
                            <div class="col-lg-12">
-                              <label for="q4">4. Please choose any other amenities?</label>
-                              <select data-placeholder="Choose other amenities ..." name="other[]" multiple
-                                 class="chosen-select">
+                              <label for="q4">4. Please choose health amenities?</label>
+                              <select data-placeholder="Choose other amenities ..." name="other[]" multiple class="chosen-select" id="q4">
                                  <option value="0"></option>
-                                 <option value="1">test</option>
-                                 <option value="2">test1</option>
-                                 <option value="3">test2</option>
-                                 <option value="4">test3</option>
-                                 <option value="5">test4</option>
+                                 <option value="Doctor">Doctors</option>
+                                 <option value="Dentist">Dentist</option>
+                                 <option value="Veterinarian">Veterinarian</option>
+                                 <option value="Gym">Gym</option>
                               </select>
                            </div>
                         </div>
                      </div>
+                       <button type="submit" class="btn btn-primary submit" id="submitBtn">Submit</button>
                   </div>
                </form>
             </div>
@@ -167,7 +162,7 @@
       </div>
    </footer>
    <!--JavaScript-->
-   <script src="/assets/javascript/neighHunter.js"></script>
+   <script src="assets/javascript/neighHunter.js"></script>
    <!--Bootstrap Additions-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
