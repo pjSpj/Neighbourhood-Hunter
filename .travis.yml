@@ -1,1 +1,8 @@
 language: node_js
+deploy:
+  provider: heroku
+  api_key:
+    secure: a9fqmJP+tIYKmtAvlLRfPljKy1Pgk/dFReExbzhsQl6zbxNTViq+iDLwYBxgsN5y83tC21jdEViUh0ximzx6ae7PEFVunBjIKYndbSFKtV9bjWIUTom5jgy60lVD06SsDwjdkQPilDSrV21EVg6YkBjg+sdFRmRAnIjVwZ6KHCjdITx0vCqY4uQlx4C+bksq8euQjDG1NhsJCIES58HI+VZbaDSU75IECImyCRet5Vn6yfw82B+zggFE7CpcNMKnmuhM6TUwHnR40AWDhcbCh2kYENYfN9nv3MvD3NBqsIY0Ol14dchUikjUIu2kY9uDeDm5ktgb7YVqYMXrtO6OUTvl6/X4Whs1XxAsOtV4fMuA866ijBItcmc+3RTy4aHLMD7Gjhqksi4n41XYYeVvO1UhbPchyCyjaC4Et6eblsoyk/mmVvvH/6guxd0zKYfSMhohEA/tiKgv7HKaKuZfQ+A6KChKjEOgFtPC+mnlG+8bTgsUtN3iIT7LIxkE7bjQ9JlyEZDPXP2mczC+6GM/2JVlECnTkPJ/pH4aPYvNJGVQUDSqjUwGy5Jl/NQmX+hZZj5LGfoK6bG5NUvXYmrh0A7GlJq9MmUYKQ+MCCdXo79ocJy/lJobagrjPs8wFVJJdApiA/JKz6ELC+jlV2KaX1JfU471rns7bGd+jeBmjA4=
+  app: Project2-Team4
+  on:
+    repo: upstairskid/Project2-Team4
