@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.img{
+    background-image: url("/assets/images/skyline.png");
+    background-position: center;
+}
+.map {
+    width: 600px;
+    height: 400px;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    left: auto;
+    background-color: #4592af;
+    width: 100%;
+    color: white
+}
+
+.fa-home{
+    color: #4592af
+}
+
+.register{
+    color:#f6f5f5;
+    background-color: #4592af;
+    border:none;
+    margin-right: 2px;
+}
+
+.register:hover{
+    color:#33313b
+
+}
