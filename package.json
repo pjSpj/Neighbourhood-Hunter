@@ -1,42 +1,32 @@
 {
-  "name": "project2-team4",
+  "name": "login",
   "version": "1.0.0",
-  "description": "for project 2",
+  "description": "login for proj2",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/upstairskid/Project2-Team4.git"
   },
-  "keywords": [
-    "express",
-    "mysql",
-    "sequelize",
-    "node",
-    "handlebars",
-    "API",
-    "MVC"
-  ],
-  "author": "Team4",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/upstairskid/Project2-Team4/issues"
   },
   "homepage": "https://github.com/upstairskid/Project2-Team4#readme",
   "dependencies": {
-    "axios": "^0.18.0",
-    "cheerio": "^1.0.0-rc.3",
-    "chosen-js": "^1.8.7",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "handlebars": "^4.1.2",
-    "kijiji-scraper": "^4.0.6",
+    "express-session": "^1.16.1",
     "mysql2": "^1.6.5",
-    "node-fetch": "^2.5.0",
-    "sequelize": "^5.8.4"
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.8.5"
   }
 }
