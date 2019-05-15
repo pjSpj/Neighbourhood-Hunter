@@ -28,17 +28,26 @@ $("#submitBtn").on("click", function (event) {
     else {
         alert("Fill in the selections");
     }
-    router.post("/api/newSurvey", function(req, res) {
-        db.Survey.create({
-            housing: user.question1,
-            social: user.question2,
-            outdoors: user.question3,
-            health: user.question4
 
-        }).then(function(data) {
-            
-          res.json(data);
-        });
-      });
+    db.Survey.create({
+        housing: user.question1,
+        social: user.question2,
+        outdoors: user.question3,
+        health: user.question4
+
+    }).then(function(data) {
+        console.log(data);
+      res.json(data);
+    //   $.ajax("/api/newSurvey", {
+    //     type: "POST",
+    //     data: newBurger
+    //   }).then(
+    //     function() {
+    //       console.log("Cooked up a burger!");
+    //       location.reload();
+    //     }
+    //   );
+    });
+
 });
 
