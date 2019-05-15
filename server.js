@@ -11,6 +11,7 @@ PORT = process.env.PORT || 3006;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 app.use(session({
     secret:"neighbourhood",
@@ -28,8 +29,11 @@ app.engine('hbs',exphbs({
 app.set('view engine','.hbs')
 
 app.get('/',function(req,res){
-    res.render('home')
+    res.render('index',{
+        style:"./css/style.css"
+    })
 })
+
 
 const models = require('./models')
 
