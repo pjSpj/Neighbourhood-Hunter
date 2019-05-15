@@ -9,14 +9,16 @@ module.exports = function(app,passport){
         failureRedirect: '/signup'
     }
     ));
-    
-    app.get('/favourites',isLoggedIn, authController.favourites);
-    app.get('/logout',authController.logout);
-    app.post('/signin', passport.authenticate('local-signin', {
+
+    app.post('/signin', passport.authenticate('local-signup', {
         successRedirect: '/favourites',
         failureRedirect: '/signin'
     }
-));
+    ));
+    
+    app.get('/favourites',isLoggedIn, authController.favourites);
+    app.get('/logout',authController.logout);
+    
     function isLoggedIn(req, res, next) {
         if (req.isAuthenticated())
             return next();             
