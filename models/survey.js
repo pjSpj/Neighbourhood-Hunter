@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  let Survey = sequelize.define('User', {
+  let Survey = sequelize.define('userinfo', {
     housing_info: {
       type: DataTypes.STRING
       },
