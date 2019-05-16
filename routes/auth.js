@@ -5,13 +5,13 @@ module.exports = function(app,passport){
     app.get('/signin', authController.signin);
     
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect: '/favourites',
+        successRedirect: '/survey',
         failureRedirect: '/signup'
     }
     ));
 
     app.post('/signin', passport.authenticate('local-signup', {
-        successRedirect: '/favourites',
+        successRedirect: '/survey',
         failureRedirect: '/signin'
     }
     ));
