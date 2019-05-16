@@ -8,7 +8,7 @@ exports.signin = function(req, res) {
 }
 
 exports.favourites = function(req, res) {
-    res.render('favourites');
+    res.render('survey');
 }
 
 exports.logout = function(req, res) {
