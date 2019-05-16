@@ -39,13 +39,5 @@ $("#submitBtn").on("click", function (event) {
     else {
         alert("Fill in the selections");
     }
-    // db.Survey.create({
-    //     housing: user.question1,
-    //     social: user.question2,
-    //     outdoors: user.question3,
-    //     health: user.question4
-
-    // }).then(function(data) {
-    // });
 });
 

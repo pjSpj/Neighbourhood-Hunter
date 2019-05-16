@@ -15,6 +15,7 @@ router.get("/result",function (req,res){
     res.render("results");
 })
 
+
 router.get("/details",function (req,res){
 
     // receive an address in the body, for now its defaulted to myhal instead
