@@ -76,9 +76,9 @@ models.sequelize.sync().then(function(){
 //app.use(bodyParser.urlencoded({ extended: true }));
 //app.use(bodyParser.json());
 
-//Set handlebars as engine
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// //Set handlebars as engine
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
 
 //Require Routes
 var routes = require("./routes/html-routes");
