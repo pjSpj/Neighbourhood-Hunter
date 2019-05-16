@@ -34,6 +34,68 @@ app.get('/',function(req,res){
     })
 })
 
+app.get('/survey',function(req,res){
+    res.render('survey')
+})
+
+/**Subscribe function */
+app.get('/mail',function(req,res){
+    res.render('mail')
+})
+
+app.post('/mail',function(req,res){
+    let firstName = req.body.fName;
+    let lastName = req.body.lName;
+    let email = req.body.email;
+
+    let data = {
+        members:[
+            {
+                email_address: email,
+                status:"subscribed",
+                merge_fields:{
+                    FNAME:firstName,
+                    LNAME:lastName    
+                }
+            }
+        ]
+    }
+
+   let jsonData = JSON.stringify(data)
+    // console.log(firstName,lastName,email)
+
+    let options = {
+        url:"https://us20.api.mailchimp.com/3.0/lists/2e7eff00af",
+        method:"POST",
+        headers:{
+            "Authorization":"pj aee8b234f5ce4d931bc392506fbd346f-us20"
+        },
+        body:jsonData
+    }
+
+
+    request(options,function(err,response,body){
+        if(err){
+            //console.log(err)
+            res.render("failure")
+        }else{
+            if(response.statusCode ===200){
+                res.render("success")
+            }else(
+                res.render("failure")
+            )
+        }
+    })
+})
+
+app.post('/failure',function(req,res){
+    res.redirect('/mail')
+})
+
+app.post('/success',function(req,res){
+    res.redirect('/result')
+})
+
 
 const models = require('./models')
 
@@ -46,39 +108,6 @@ models.sequelize.sync().then(function(){
     console.log(err,"sth were wrong")
 })
 
-// app.listen(PORT,function(err){
-//     if(!err){
-//         console.log('app listening on port '+PORT)
-//     }else{
-//         console.log(err)
-//     }
-// })
-// *********************************************************************
-// SERVER
-// *********************************************************************
-
-//REQUIRE
-//======================================================================
-//require("dotenv").config();
-
-// const express = require('express');
-// const bodyParser = require("body-parser");
-// const exphbs = require("express-handlebars");
-
-//const db = require("./models")
-
-// const app = express();
-//const PORT = process.env.PORT || 3006;
-
-//Set up static files using express
-//app.use(express.static(process.cwd() + "/public"));
-
-//app.use(bodyParser.urlencoded({ extended: true }));
-//app.use(bodyParser.json());
-
-// //Set handlebars as engine
-// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-// app.set("view engine", "handlebars");
 
 //Require Routes
 var routes = require("./routes/html-routes");
