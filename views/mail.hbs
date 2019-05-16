@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Subscribe</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/signin.css">
+
+</head>
+ 
+<body>
+    <!-- Makes POST request to /register route -->
+    <form class="form-signin" action="/mail" name="mail" method="POST">
+      <div class="text-center mb-4"></div>
+        <h1 class="h3 mb-3 font-weight-normal login ">Subscribe</h1>
+      </div>
+        <div class="form-label-group">
+        <input type="text" class="form-control" name="fName" placeholder="First Name">
+        <label for="fName">First Name</label>
+      </div>
+      <div class="form-label-group">
+        <input type="text" class="form-control" name="lName" placeholder="Last Name">
+        <label for="lName">Last Name</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="email" class="form-control" name="email" placeholder="Email">
+        <label for="email">Email</label>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-dark">Subscribe</button>
+      </div>
+    </form>
+</body>
+ 
+</html>
