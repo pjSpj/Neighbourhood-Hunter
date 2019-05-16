@@ -7,23 +7,22 @@ body {
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 14pt;
-    background-color: #f6f5f5
+    background-color:#f6f5f5
 }
 
 h1 {
     font-family: 'Handlee', cursive;
 }
 
-.img {
-    background-image: url("../images/1457936.jpg");
-    background-position: center;
-}
-
 .jumbotron {
     background: none;
 }
 
-footer {
+.fa-home{
+    color: #4592af
+}
+
+footer{
     bottom: 0;
     position: fixed;
     text-align: center;
@@ -33,23 +32,9 @@ footer {
     color: white
 }
 
-.fa-home {
-    color: #4592af
-}
-
-.register {
-    color: #f6f5f5;
-    background-color: #4592af;
-    border: none;
-    margin-right: 2px;
-}
-
-.register:hover {
-    color: #33313b
-}
-
-.visit {
-    color: #f6f5f5;
+.logout{
+    color:#f6f5f5;
     background-color: #33313b;
-    border: none;
+    border:none;
+    margin-left: auto;
 }
