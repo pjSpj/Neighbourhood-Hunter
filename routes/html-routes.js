@@ -13,7 +13,6 @@ router.get("/search",function (req,res){
 
 router.get("/result",function (req,res){
     res.render("results");
-
 })
 
 router.get("/details",function (req,res){

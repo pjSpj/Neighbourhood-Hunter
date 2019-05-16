@@ -1,12 +1,11 @@
 $(".chosen-select").chosen({ width: "95%"})
 
-var isValid = true;
-let user = {}
-
 $("#submitBtn").on("click", function (event) {
     event.preventDefault();
+    var isValid = true;
+    var user = {}
     
-   if ($(".chosen-select").val() === "0") {
+   if (($(".chosen-select").val() === "0") || ($(".chosen-select").val() === null)) {
         isValid = false;
     }
     //Get value of name and photo 
@@ -17,37 +16,36 @@ $("#submitBtn").on("click", function (event) {
                 question2: $("#q2").val(),
                 question3: $("#q3").val(),
                 question4: $("#q4").val(),
+                question4: $("#q5").val()
         }  
         
         console.log(user)  
         // CLEAR USER INPUT ON SUBMIT
         $(".chosen-select").val("").trigger("chosen:updated");
+        $(".location").val("");
 
-        return user
+
+      $.ajax("/api/newSurvey", {
+        type: "POST",
+        data: user
+      }).then(
+        function() {
+            console.log("request sent");
+            location.replace("/result");
+        }
+      );
+
     }
     else {
         alert("Fill in the selections");
     }
+    // db.Survey.create({
+    //     housing: user.question1,
+    //     social: user.question2,
+    //     outdoors: user.question3,
+    //     health: user.question4
 
-    db.Survey.create({
-        housing: user.question1,
-        social: user.question2,
-        outdoors: user.question3,
-        health: user.question4
-
-    }).then(function(data) {
-        console.log(data);
-      res.json(data);
-    //   $.ajax("/api/newSurvey", {
-    //     type: "POST",
-    //     data: newBurger
-    //   }).then(
-    //     function() {
-    //       console.log("Cooked up a burger!");
-    //       location.reload();
-    //     }
-    //   );
-    });
-
+    // }).then(function(data) {
+    // });
 });
 
