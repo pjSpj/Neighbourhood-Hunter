@@ -4,31 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>Neighbourhood-Auth</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Lato" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/signin.css">
 
 </head>
- 
+
 <body>
-    <!-- Makes POST request to /register route -->
-    <form class="form-signin" action="/signup" name="signup" method="POST">
-      <div class="text-center mb-4"></div>
-        <h1 class="h3 mb-3 font-weight-normal login ">Register</h1>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <h1>Register</h1>
+        <div class="card">
+          <div class="card-body">
+
+            <!-- Makes POST request to /register route -->
+            <form action="/signup" name="signup" method="POST">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password">
+              </div>
+              <button type="submit" class="btn btn-dark">Register</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="form-label-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" name="email">
-      </div>
-      <div class="form-label-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" name="password">
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn btn-dark">Register</button>
-      </div>
-    </form>
 </body>
- 
+
 </html>

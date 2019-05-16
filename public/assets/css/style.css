@@ -4,14 +4,64 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 14pt;
+    background-color:#f6f5f5
+}
+
+h1 {
+    font-family: 'Handlee', cursive;
 }
 
 .img{
-    background-image: url("/assets/images/skyline.png");
+    background-image: url("../images/1457936.jpg");
     background-position: center;
 }
 .map {
     width: 600px;
     height: 400px;
+}
+
+.card-header{
+    background-color: #763626;
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+#submitBtn {
+    background-color: #763626;
+    color: #ffffff;
+    border-color: #763626;
+}
+
+#submitBtn:hover {
+    background-color: #ffffff;
+    color: #763626;
+    border-color: #ffffff;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    left: auto;
+    background-color: #4592af;
+    width: 100%;
+    color: white
+}
+
+.fa-home{
+    color: #4592af
+}
+
+.register{
+    color:#f6f5f5;
+    background-color: #4592af;
+    border:none;
+    margin-right: 2px;
+}
+
+.register:hover{
+    color:#33313b
 }
