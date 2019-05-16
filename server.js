@@ -82,8 +82,12 @@ models.sequelize.sync().then(function(){
 
 //Require Routes
 var routes = require("./routes/html-routes");
+var apiRoutes = require("./routes/api-routes");
 
 app.use(routes);
+app.use(apiRoutes);
+
+
 
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
