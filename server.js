@@ -66,10 +66,10 @@ app.post('/mail',function(req,res){
     // console.log(firstName,lastName,email)
 
     let options = {
-        url:"https://us20.api.mailchimp.com/3.0/lists/2e7eff00af",
+        url:"https://us20.api.mailchimp.com/3.0/lists/{list_id}",
         method:"POST",
         headers:{
-            "Authorization":"pj aee8b234f5ce4d931bc392506fbd346f-us20"
+            "Authorization":"pj {apikey}"
         },
         body:jsonData
     }
