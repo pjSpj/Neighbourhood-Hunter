@@ -21,7 +21,7 @@ https://warm-atoll-86410.herokuapp.com/
 
 <h2>Members</h2>
 <ul>
+ <li>Amanda Tomé</li>
 <li>Chentao(Kevin)Tang</li>
-<li>Amanda Tomé</li>
 <li>Peiji Song.js</li>
  </ul>
